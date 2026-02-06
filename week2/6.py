@@ -1,0 +1,53 @@
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+#loop through the letters in the word "banana":
+
+for x in "banana":
+  print(x)  
+
+#break
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+#cont
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+#range()
+for x in range(6):
+  print(x)
+
+for x in range(2, 6):
+  print(x)
+
+#Increment the sequence with 3 (default is 1):
+for x in range(2, 30, 3):
+  print(x)
+
+#else
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+
+#nested
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+
+#the pass statement
+for x in [0, 1, 2]:
+  pass
+# having an empty for loop like this, would raise an error without the pass statement
