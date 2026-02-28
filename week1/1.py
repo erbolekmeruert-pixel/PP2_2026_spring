@@ -1,19 +1,9 @@
-import json
+from datetime import datetime
 
-with open("sample-data.json", "r") as f:
-    data = json.load(f)
+date1 = datetime(2026, 1, 1, 12, 0, 0)
+date2 = datetime(2024, 1, 2, 12, 0, 0)
 
-print("Interface Status")
-print("=" * 80)
-print(f"{'DN':60} {'Description':15} {'Speed':10} {'MTU':5}")
-print("-" * 80)
+difference = date2 - date1
 
-for item in data["imdata"]:
-    attributes = item["l1PhysIf"]["attributes"]
+print("Difference in seconds:", difference.total_seconds())
 
-    dn = attributes["dn"]
-    descr = attributes["descr"]
-    speed = attributes["speed"]
-    mtu = attributes["mtu"]
-
-    print(f"{dn:60} {descr:15} {speed:10} {mtu:5}")  
