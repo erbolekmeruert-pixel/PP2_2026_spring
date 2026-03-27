@@ -1,9 +1,15 @@
-from datetime import datetime
+"""import re
+a = input()
+x = re.findall(r"\w+\.\w+@\w+\.\w+", a)
+#y = re.findall()
+#rgrz = re.search()
+#f = re.match()
 
-date1 = datetime(2026, 1, 1, 12, 0, 0)
-date2 = datetime(2024, 1, 2, 12, 0, 0)
-
-difference = date2 - date1
-
-print("Difference in seconds:", difference.total_seconds())
-
+if x:
+    print(x)
+else:
+    print("No email")"""
+import re
+a = input()
+d = re.sub(r"[ ,\.]", ":", a)
+print(d)
