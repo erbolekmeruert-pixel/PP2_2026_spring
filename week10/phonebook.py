@@ -1,5 +1,6 @@
 from connect import connect
 
+
 def insert_or_update(name, phone):
     conn = connect()
     cur = conn.cursor()
@@ -39,7 +40,7 @@ def paginate(limit, offset):
     conn.close()
 
 
-def delete(value):
+def delete_contact(value):
     conn = connect()
     cur = conn.cursor()
 
@@ -50,15 +51,37 @@ def delete(value):
     conn.close()
 
 
-
+# 🔥 Меню
 if __name__ == "__main__":
-    insert_or_update("Ali", "87001234567")
-    insert_or_update("Dana", "87005554433")
+    while True:
+        print("\n1 - Insert/Update")
+        print("2 - Search")
+        print("3 - Pagination")
+        print("4 - Delete")
+        print("0 - Exit")
 
-    print("Search:")
-    search("Ali")
+        choice = input("Choose: ")
 
-    print("Pagination:")
-    paginate(5, 0)
+        if choice == "1":
+            name = input("Name: ")
+            phone = input("Phone: ")
+            insert_or_update(name, phone)
 
-    delete("Dana")
+        elif choice == "2":
+            pattern = input("Search: ")
+            search(pattern)
+
+        elif choice == "3":
+            limit = int(input("Limit: "))
+            offset = int(input("Offset: "))
+            paginate(limit, offset)
+
+        elif choice == "4":
+            value = input("Name or phone: ")
+            delete_contact(value)
+
+        elif choice == "0":
+            break
+
+        else:
+            print("ERROR")
