@@ -51,7 +51,7 @@ def delete_contact(value):
     conn.close()
 
 
-# 🔥 Меню
+
 if __name__ == "__main__":
     while True:
         print("\n1 - Insert/Update")
