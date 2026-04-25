@@ -26,11 +26,6 @@ hand_m = pygame.transform.scale(original_hand, (200, 100))
 # Adding 180 as the 4th value (Alpha) to make it semi-transparent
 hand_m.fill((200, 200, 255, 180), special_flags=pygame.BLEND_RGBA_MULT)
 
-# Hour hand: Short and thick, tinted red, and semi-transparent for a softer look
-hand_h = pygame.transform.scale(original_hand, (150, 120))
-# Adding 180 as the 4th value (Alpha)
-hand_h.fill((255, 200, 200, 180), special_flags=pygame.BLEND_RGBA_MULT)
-
 
 # Resize the clock body to fit the window dimensions
 body_img = pygame.transform.scale(body_img, (700, 700))
@@ -62,7 +57,7 @@ while running:
             running = False
 
     # Retrieve current rotation angles from the logic module
-    sec_angle, min_angle, hour_angle = clock_logic.get_angles()
+    sec_angle, min_angle = clock_logic.get_angles()
 
     # RENDERING PIPELINE
     screen.fill((255, 255, 255)) # Clear screen with white background
@@ -71,8 +66,7 @@ while running:
     body_rect = body_img.get_rect(center=CENTER)
     screen.blit(body_img, body_rect)
     
-    # 2. Draw the hands in order (Hour -> Minute -> Second)
-    draw_hand(screen, hand_h, hour_angle, CENTER) # The lowest layer (hours)
+    # 2. Draw the hands in order (Minute -> Second)
     draw_hand(screen, hand_m, min_angle, CENTER)  # The middle layer (minutes)
     draw_hand(screen, hand_s, sec_angle, CENTER)  # The top layer (seconds)
 
