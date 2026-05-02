@@ -1,0 +1,92 @@
+[
+  {
+    "name": "mika",
+    "score": 3077,
+    "distance": 2314,
+    "coins": 15,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:31:52"
+  },
+  {
+    "name": "mika",
+    "score": 2651,
+    "distance": 2087,
+    "coins": 10,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:31:27"
+  },
+  {
+    "name": "\u0430\u0430\u0430",
+    "score": 1962,
+    "distance": 1521,
+    "coins": 8,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:36:14"
+  },
+  {
+    "name": "mika",
+    "score": 1702,
+    "distance": 1243,
+    "coins": 9,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:31:37"
+  },
+  {
+    "name": "mika",
+    "score": 1318,
+    "distance": 1130,
+    "coins": 4,
+    "difficulty": "normal",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:30:00"
+  },
+  {
+    "name": "mika",
+    "score": 1020,
+    "distance": 832,
+    "coins": 4,
+    "difficulty": "normal",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:30:17"
+  },
+  {
+    "name": "mika",
+    "score": 980,
+    "distance": 698,
+    "coins": 6,
+    "difficulty": "normal",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:29:48"
+  },
+  {
+    "name": "mika",
+    "score": 973,
+    "distance": 785,
+    "coins": 4,
+    "difficulty": "normal",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:30:09"
+  },
+  {
+    "name": "mika",
+    "score": 866,
+    "distance": 678,
+    "coins": 4,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:31:11"
+  },
+  {
+    "name": "\u0430\u0430\u0430",
+    "score": 784,
+    "distance": 690,
+    "coins": 2,
+    "difficulty": "easy",
+    "result": "Game Over",
+    "timestamp": "2026-05-02 09:36:01"
+  }
+]
